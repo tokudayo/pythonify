@@ -69,7 +69,7 @@ To run Pythonify, you need Python (obviously). Windows users can download Python
 
 ### CLI
 
-```
+```shell
 python pythonify.py [-h] -i INPUT -o OUTPUT [-s INDENT_SIZE] [-e EOL_SPACE] 
 ```
 
@@ -80,6 +80,14 @@ Whereas:
 - INDENT_SIZE is the prefered number of indentation spaces (default to 4).
 
 - EOL_SPACE is the spacing between the code and semicolons and/or brackets at the end of the line (default to 1).
+
+Working example:
+
+```shell
+python pythonify.py -i Example.java -o output.java
+```
+
+That would produce the code above.
 
 ### As a module
 
@@ -93,11 +101,11 @@ pythonify('example.cpp', 'output.cpp', indent_size=4, eol_spacing=1)
 
 ## Known issues
 
-For now, Pythonify treats every pair of curly braces as a code block wrapper thus in cases where curly braces are used differently (e.g. array definitions), the code would not look so pretty.
+For now, Pythonify treats every pair of curly braces as a code block wrapper, thus in cases where curly braces are used differently (e.g. array definitions), the code would look a bit off but not too noticeable.
 
 ## Why?
 
-- I thought [this](assets/meme.png) looks funny.
+- I thought [this](assets/meme.png) was funny.
 
 - I was bored.
 

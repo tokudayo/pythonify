@@ -97,8 +97,8 @@ def pythonify(
 
 def parser():
     parser = argparse.ArgumentParser(
-        description="convert C++/Java code to a 'pseudo Python' format",
-        epilog="example: python3 main.py -i example.cpp -o output.cpp",
+        description="convert C++/Java code into a 'pseudo Python' format",
+        epilog="example: python3 pythonify.py -i example.cpp -o output.cpp",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 

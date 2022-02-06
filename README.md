@@ -75,11 +75,11 @@ python pythonify.py [-h] -i INPUT -o OUTPUT [-s INDENT_SIZE] [-e EOL_SPACE]
 
 Whereas:
 
-- INPUT and OUTPUT are the input and output file paths
+- INPUT and OUTPUT are the input and output file paths.
 
-- INDENT_SIZE is the prefered number of indentation spaces (default to 4)
+- INDENT_SIZE is the prefered number of indentation spaces (default to 4).
 
-- EOL_SPACE is the spacing between the code and semicolons and/or brackets at the end of the line (default to 1)
+- EOL_SPACE is the spacing between the code and semicolons and/or brackets at the end of the line (default to 1).
 
 ### As a module
 
@@ -97,7 +97,7 @@ For now, Pythonify treats every pair of curly braces as a code block wrapper thu
 
 ## Why?
 
-- I think [this](assets/meme.png) looks funny.
+- I thought [this](assets/meme.png) looks funny.
 
 - I was bored.
 

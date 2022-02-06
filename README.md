@@ -11,7 +11,7 @@ public class Example {
             System.out.println(String.valueOf(a));
         }
         else {
-            for (int i = 0; i <=n; i++) {
+            for (int i = 0; i <= n; i++) {
                 permute(n - 1, a);
                 swap(a, n % 2 == 0 ? i : 0, n);
             }
@@ -39,7 +39,7 @@ public class Example                                   {
         if (n == 0)                                    {
             System.out.println(String.valueOf(a))      ;}
         else                                           {
-            for (int i = 0; i <=n; i++)                {
+            for (int i = 0; i <= n; i++)               {
                 permute(n - 1, a)                      ;
                 swap(a, n % 2 == 0 ? i : 0, n)         ;}}}
     
@@ -51,7 +51,6 @@ public class Example                                   {
     public static void main()                          {
         char[] a = "Hello world".toCharArray()         ;
         permute(5, a)                                  ;}}
-
 ```
 
 ## Installation
@@ -91,7 +90,7 @@ That would produce the code above.
 
 ### As a module
 
-The API is similar to CLI version. Just do something like:
+The API is similar to the command line version. Just do something like:
 
 ```python
 from pythonify import pythonify

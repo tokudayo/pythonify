@@ -4,7 +4,7 @@ public class Example {
             System.out.println(String.valueOf(a));
         }
         else {
-            for (int i = 0; i <=n; i++) {
+            for (int i = 0; i <= n; i++) {
                 permute(n - 1, a);
                 swap(a, n % 2 == 0 ? i : 0, n);
             }

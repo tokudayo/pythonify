@@ -1,6 +1,9 @@
 import argparse
 
 
+__all__ = ["pythonify"]
+
+
 def pythonify(
     in_fp, out_fp,
     indent_size: int = 4,
@@ -63,7 +66,7 @@ def pythonify(
                 outfile.write(' ' * (cur_indent * indent_size))
 
         # Handle brackets
-        if char in '{}':
+        elif char in '{}':
             if cur_line_len < bracket_position:
                 outfile.write(' ' * (bracket_position - cur_line_len))
                 cur_line_len = bracket_position
@@ -79,7 +82,7 @@ def pythonify(
                 outfile.write(' ' * (cur_indent * indent_size))
         
         # Python users don't need semicolons
-        if char == ';':
+        elif char == ';':
             if next_char == '\n' and cur_line_len < bracket_position:
                 outfile.write(' ' * (bracket_position - cur_line_len))
                 cur_line_len = bracket_position
